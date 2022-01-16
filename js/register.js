@@ -3,7 +3,7 @@ import { app, auth } from './script.js';
 window.onload = () => {
   auth.onAuthStateChanged(auth.getAuth(), (user) => {
     if (user) {
-      window.location.replace("../home.html");
+      window.location.replace("./home.html");
     }
 
     else {
@@ -28,7 +28,7 @@ function signup() {
   auth.createUserWithEmailAndPassword(authState, email, password)
   .then((userCredential) => {
     // Signed in
-    window.location.replace("../home.html");
+    window.location.replace("./home.html");
   })
   .catch((error) => {
     const errorCode = error.code;

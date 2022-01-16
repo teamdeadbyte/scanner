@@ -7,7 +7,7 @@ window.onload = () => {
     }
 
     else {
-      window.location.replace("../");
+      window.location.replace("./");
     }
   });
 };

@@ -7,7 +7,7 @@ window.onload = () => {
     }
 
     else {
-      window.location.replace("../");
+      window.location.replace("./");
     }
   });
 };
@@ -18,7 +18,7 @@ function signout() {
   auth.signOut(authState)
   .then(() => {
     // Signed Out
-    window.location.replace("../");
+    window.location.replace("./");
   })
   .catch((error) => {
     const errorCode = error.code;

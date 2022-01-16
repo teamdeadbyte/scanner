@@ -4,7 +4,7 @@ import * as auth from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js
 window.onload = () => {
   auth.onAuthStateChanged(auth.getAuth(), (user) => {
     if (user) {
-      window.location.replace("../home.html");
+      window.location.replace("./home.html");
     }
 
     else {
@@ -27,7 +27,7 @@ function signin() {
   auth.signInWithEmailAndPassword(authState, email, password)
   .then((userCredential) => {
     // Signed in
-    window.location.replace("../home.html");
+    window.location.replace("./home.html");
   })
   .catch((error) => {
     const errorCode = error.code;

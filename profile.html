@@ -3,32 +3,43 @@
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width"/>
   <meta charset="UTF-8"/>
-
+  <title>Profile</title>
   <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
   <div class="container">
     <div class="header">Profile</div>
-    <div class="main">
+    <div class="main centered">
       <div id="message" class="content">
-        <div class="image">IMAGE</div>
-        <div>
-          <b id="name">...</b>
+        <!-- div class="image">IMAGE</div -->
+        <div style="text-align: start">
+          <b>Name: <span id="name">...</span></b>
           <br/>
           <b>ID: <span id="id-no">...</span></b>
         </div>
 
-        <input class="fill" type="email" placeholder="Email" disabled>
-        <input class="fill" type="tel" placeholder="Telephone No" disabled>
-        <input class="fill" type="password" placeholder="Password" disabled>
+        <!-- input id="email" class="fill" type="email" placeholder="Email" disabled>
+        <input id="tel-no" class="fill" type="tel-no" placeholder="Telephone No" disabled>
+        <input id="password" class="fill" type="password" placeholder="Password" -->
+        <div class="fill end-to-end">
+            <input class="expand" id="email" type="email" placeholder="Email" disabled>
+            <input id="ch-email" type="button" value="Change">
+        </div>
+        <div class="fill end-to-end">
+            <input class="expand" id="tel-no" type="tel-no" placeholder="Telephone No" disabled>
+            <input id="ch-tel" type="button" value="Change">
+        </div>
+        <div class="fill end-to-end">
+            <input class="expand" id="password" type="password" placeholder="Password" disabled>
+            <input id="ch-pass" type="button" value="Change">
+        </div>
       </div>
     </div>
     <div class="footer">
       <a href="home.html">Home</a>
       <a href="#">Scan</a>
       <a class="active">Profile</a>
-      <a href="settings.html">Settings</a>
-      <a href="#">Admin</a>
+      <a id="admin-btn" href="admin.html">Admin</a>
     </div>
   </div>
 

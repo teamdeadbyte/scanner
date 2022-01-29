@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <meta charset="UTF-8" />
+  <title>Activity Log</title>
+  <link href="css/style.css" rel="stylesheet" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="header">Activity Log</div>
+    <div class="fill end-to-end">
+      <div class="strip fill" style="text-align: start">
+        <h3 id="timestamp">...</h3>
+        <b>Check In: <span id="start">...</span></b><br>
+        <b>Check Out: <span id="stop">-</span></b>
+      </div>
+    </div>
+    <div id="main" class="main centered">
+      <div id="message" class="content">
+        <b>There's no activities available.</b>
+      </div>
+    </div>
+    <div class="footer">
+      <a href="home.html">Home</a>
+      <a href="#">Scan</a>
+      <a href="profile.html">Profile</a>
+      <a href="admin.html">Admin</a>
+    </div>
+  </div>
+
+  <div id="#cover" class="cover">&nbsp;</div>
+
+  <script src="js/script.js" type="module"></script>
+  <script src="js/log.js" type="module"></script>
+</body>
+
+</html>

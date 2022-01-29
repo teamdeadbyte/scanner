@@ -3,16 +3,16 @@
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width"/>
   <meta charset="UTF-8"/>
-  <title>Sign In</title>
+  <title>Reauthentication</title>
   <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
   <div class="container">
-    <div class="header hidden">Sign In</div>
-    <div class="main centered">
+    <div class="header hidden">Reauthentication</div>
+    <div class="main">
       <div class="content">
         <div>
-          <h1>Sign In</h1>
+          <h1>Reauthentication</h1>
           <div>
             <input class="fill" id="email" type="email" placeholder="Email">
             <input class="fill" id="password" type="password" placeholder="Password">
@@ -21,12 +21,10 @@
                 <input type="checkbox" id="remember-auth">
                 <label for="remember-auth"><small>Remember Me</small></label>
               </div -->
-              <small><a href="forget.html">Forgot Password?</a></small>
             </div>
           </div>
-          <button id="login-btn" type="button">Login</button>
+          <button id="auth-btn" type="button">Authenticate</button>
         </div>
-        <small>Don't have an account? <a href="register.html">Create</a></small>
       </div>
     </div>
     <div class="footer hidden">
@@ -37,6 +35,6 @@
   <div id="#cover" class="cover">&nbsp;</div>
 
   <script src="js/script.js" type="module"></script>
-  <script src="js/login.js" type="module"></script>
+  <script src="js/reauth.js" type="module"></script>
 </body>
 </html>

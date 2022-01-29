@@ -1,9 +1,10 @@
-import { app, auth } from './script.js';
+import { app } from './script.js';
+import * as auth from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
 
 window.onload = () => {
   auth.onAuthStateChanged(auth.getAuth(app), (user) => {
-    if (user) {
-      window.location.replace("./home.html");
+    if (!user) {
+      window.location.replace("./");
     }
 
     else {
@@ -12,7 +13,7 @@ window.onload = () => {
   });
 };
 
-function signin() {
+function reauth() {
   const authState = auth.getAuth(app);
   const email = document.querySelector("#email").value;
   const password = document.querySelector("#password").value;
@@ -25,8 +26,8 @@ function signin() {
 
   auth.signInWithEmailAndPassword(authState, email, password)
   .then((userCredential) => {
-    // Signed in
-    window.location.replace("./home.html");
+    // Reauthenticated
+    window.location.replace("./edit.html");
   })
   .catch((error) => {
     const errorCode = error.code;
@@ -35,4 +36,4 @@ function signin() {
   });
 }
 
-document.querySelector("#login-btn").addEventListener("click", signin);
+document.querySelector("#auth-btn").addEventListener("click", reauth);

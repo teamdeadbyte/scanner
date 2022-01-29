@@ -3,28 +3,32 @@
 <head>
   <meta name="viewport" content="initial-scale=1, width=device-width"/>
   <meta charset="UTF-8"/>
-  <title>Dashboard</title>
+  <title>Admin</title>
   <link href="css/style.css" rel="stylesheet"/>
 </head>
 <body>
   <div class="container">
-    <div class="header">Dashboard</div>
+    <div class="header">Admin</div>
+    <div class="fill end-to-end">
+      <input id="searchkey" class="expand" type="text" placeholder="Enter ID here or search nothing to reset">
+      <input id="search" type="button" value="Search / Reset">
+    </div>
     <div id="main" class="main centered">
       <div id="message" class="content">
-        <b>There's no activity available.</b>
+        <b>There's no users available.</b>
       </div>
     </div>
     <div class="footer">
-      <a class="active">Home</a>
-      <a href="scan.html">Scan</a>
+      <a href="home.html">Home</a>
+      <a href="#">Scan</a>
       <a href="profile.html">Profile</a>
-      <a id="admin-btn" href="admin.html">Admin</a>
+      <a class="active">Admin</a>
     </div>
   </div>
 
   <div id="#cover" class="cover">&nbsp;</div>
 
   <script src="js/script.js" type="module"></script>
-  <script src="js/home.js" type="module"></script>
+  <script src="js/admin.js" type="module"></script>
 </body>
 </html>

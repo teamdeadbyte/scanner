@@ -1,0 +1,19 @@
+{
+  "name": "scanner",
+  "version": "1.0.0",
+  "description": "Employee Management System",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teamdeadbyte/scanner.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/teamdeadbyte/scanner/issues"
+  },
+  "homepage": "https://github.com/teamdeadbyte/scanner#readme"
+}

@@ -1,8 +1,8 @@
-import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-app.js";
-import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.2/firebase-analytics.js";
-import * as auth from "https://www.gstatic.com/firebasejs/9.6.2/firebase-auth.js";
-import * as storage from "https://www.gstatic.com/firebasejs/9.6.2/firebase-storage.js";
-import * as database from "https://www.gstatic.com/firebasejs/9.6.2/firebase-database.js";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-app.js";
+import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.6.5/firebase-analytics.js";
+import * as auth from "https://www.gstatic.com/firebasejs/9.6.5/firebase-auth.js";
+import * as storage from "https://www.gstatic.com/firebasejs/9.6.5/firebase-storage.js";
+import * as firestore from "https://www.gstatic.com/firebasejs/9.6.5/firebase-firestore.js";
 
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
@@ -20,4 +20,4 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const analytics = getAnalytics(app);
 
-export { app, auth, storage, database };
+export { app, auth, storage, firestore };

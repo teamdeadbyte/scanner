@@ -37,7 +37,8 @@ window.onload = () => {
       if (snap) {
         let data = snap.data();
 
-        data.history.reverse().forEach((log, i) => {
+        data.history.reverse().forEach((log, idx) => {
+          let i = data.history.length - idx - 1;
           list += "<div class='content' style='text-align: start' id='" + i + "'>";
           list += "<h3>" + new Date(log.start).toDateString() + "</h3>";
           list += "<b>Check In: " + new Date(log.start).toTimeString() + "</b><br>";

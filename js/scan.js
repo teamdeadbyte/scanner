@@ -37,7 +37,7 @@ async function onScanSuccess(decodedText, decodedResult) {
     
     let newHistory = data.history;
     newHistory.push({
-      start: new Date().now(),
+      start: new Date().getTime(),
       stop: -1,
       logs: []
     });
@@ -53,7 +53,7 @@ async function onScanSuccess(decodedText, decodedResult) {
     const data = snap.data();
     
     let newHistory = data.history;
-    newHistory[newHistory.length - 1].stop = new Date().now();
+    newHistory[newHistory.length - 1].stop = new Date().getTime();
 
     await firestore.setDoc(firestore.doc(db, "users", uid),
     {
@@ -68,7 +68,7 @@ async function onScanSuccess(decodedText, decodedResult) {
     let newHistory = data.history;
     newHistory[newHistory.length - 1].logs.push({
       act: decodedText,
-      time: new Date().now()
+      time: new Date().getTime()
     });
 
     await firestore.setDoc(firestore.doc(db, "users", uid),

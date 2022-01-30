@@ -17,7 +17,8 @@ window.onload = () => {
 
         let history = data.history.reverse();
 
-        history.forEach((log, i) => {
+        history.forEach((log, idx) => {
+          let i = history.length - idx - 1;
           list += "<div class='content' style='text-align: start' id='" + i + "'>";
           list += "<h3>" + new Date(log.start).toDateString() + "</h3>";
           list += "<b>Check In: " + new Date(log.start).toTimeString() + "</b><br>";
